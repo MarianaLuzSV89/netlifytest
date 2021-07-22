@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The EU Green Deal🌻</title>
+    <style>
+    
+    h1
+     {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        font-stretch: semi-expanded;
+        text-align: center;
+        color: rgb(231, 235, 240);
+        border: 1px solid  rgb(61, 88, 206);
+        background: linear-gradient(90deg, rgb(37, 58, 153) 50%, rgba(50, 72, 172, 0.623) 100%);
+        border-radius: 10px;     
+        margin: 20px 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    h2
+     {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        font-stretch:semi-condensed;
+        text-align: center;
+        color: rgb(50, 72, 172);
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    p, 
+    li {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(9, 21, 58);
+        max-width: 800px;
+        }
+        
+    button {
+        font-family: monospace;
+        border-radius: 40px;
+        background-color: rgb(28, 42, 167);
+        padding: 20px 30px;
+        font-size: 18px;
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        border: 1px solid goldenrod;
+        box-shadow:9px 9px 4px grey;
+        transition: all 200ms ease;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: rgb(213, 228, 12);
+        color: rgb(44, 41, 223);
+    }
+    img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+    
+    }
+
+    a {
+        text-decoration: none;
+        color:  rgb(49, 56, 158);
+        font-weight: bold;
+        font-style: italic;
+    }
+     ul {
+         padding-top: 2px;
+         padding-bottom: 2px;
+        }
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            }
+    
+    .container {
+       background: linear-gradient(90deg, rgba(156, 202, 245, 0.644) 50%, rgba(75, 181, 252, 0.623) 100%);
+       max-width: 700px;
+       display: block;
+       margin: 0 auto;
+       border-radius: 10px;
+       padding-left: 25px;
+       padding-right: 25px;
+       
+    }
+    .mainText {
+        font-size: 13px;
+        line-height: 1.2;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+<h1>
+    The European Green Deal
+</h1>
+<h2>
+    Towards the first climate-neutral continent?
+</h2>
+<img src="https://www.home.sandvik/filtered/76152/rszww1200-90/green_880x480-1586585069-rszww1200-90.jpg" alt="Hands holding a green planet">
+<br />
+<hr/>
+<span class="mainText">
+<p>
+In december of 2019, the European Union presented 
+<a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en" target="_blank"> the European
+Green Deal.</a> The EU Green Deal proposes targeting key policy areas to reduce emissions and move towards a more 
+sustainable society, namely through:  
+</p>
+<ul>
+    <li>
+        Protecting biodiversity 🌱
+    </li>
+    <li>
+        Sustainable food systems 🍎
+    </li>
+    <li>
+        Sustainable agricultural practices 👨‍🌾👩‍🌾
+    </li>
+    <li>
+        Clean energy sources 🔋💡
+    </li>
+    <li>
+        Sustainable production ♻
+    </li>
+    <li>
+        A cleaner construction sector 👷‍♀️🚧
+    </li>
+    <li>
+        Sustainable mobility 🚲🚇
+    </li>
+    <li>
+        Zero pollution 🏭
+    </li>
+    <li>
+        Climate neutrality by 2050 🌍
+    </li>
+</ul>
+<p>
+    The Green New Deal has received criticism for being overambitious or not ambitious enough to stop dangerous 
+    climate change. <strong>What do <em>you</em> think?</strong> Regardless, public engagement is vital to ensure that the EU commits 
+    to working for a more sustainable future. Interested?
+</p>
+</span>
+<hr />
+<button>
+    Become a climate activist!🌎
+</button>
+<br/>
+</p>
+</div>
+<script>
+    function Register ()
+    {
+    let firstName=prompt("What is your name?");
+    let lastName=prompt("What is your last name?");
+    let continent=prompt("Are you a resident of an EU country?");
+    continent=continent.toLowerCase();
+    continent=continent.trim();
+    if (continent === "yes" || continent ==="oui" || continent==="ja" || continent === "si" || continent==="kyllä") {
+    alert("Hello " + firstName + " " + lastName + " " + "Let's save the planet🌍!")
+    }
+    else {
+        alert ("Thank you for your interest " + firstName + " " + lastName + ", but this platform is only for EU residents 😪")
+    }
+}
+    let element=document.querySelector("button");
+    element.addEventListener ("click", Register);
+</script>
+</body>
+</html>
